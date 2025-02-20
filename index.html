@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surpresa</title>
-    <script>
-        function loopAlert() {
-            while (true) {
-                alert("Faz o L!");
-            }
+    <title>Faz o L</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-    </script>
+        h1 {
+            font-size: 3em;
+            color: #333;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
-<body onload="loopAlert()">
+<body>
+    <h1>Faz o L</h1>
 </body>
 </html>
