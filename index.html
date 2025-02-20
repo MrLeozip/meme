@@ -3,29 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faz o L</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-            font-family: Arial, sans-serif;
+    <title>Alerta Infinito</title>
+    <script>
+        function alertaInfinito() {
+            setInterval(() => {
+                alert("Faz o L!");
+            }, 100);
         }
-        h1 {
-            font-size: 3em;
-            color: #333;
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-    </style>
+    </script>
 </head>
-<body>
-    <h1>Faz o L</h1>
+<body onload="alertaInfinito()">
 </body>
 </html>
